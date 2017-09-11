@@ -64,7 +64,7 @@ create_directories() {
 
 extract_redash_sources() {
     sudo -u redash mkdir "$VERSION_DIR"
-    sudo git clone https://github.com/getredash/redash.git "$VERSION_DIR"
+    sudo git clone https://github.com/DaveGTD/redash.git "$VERSION_DIR"
     ln -nfs "$VERSION_DIR" /opt/redash/current
     ln -nfs /opt/redash/.env /opt/redash/current/.env
 }
